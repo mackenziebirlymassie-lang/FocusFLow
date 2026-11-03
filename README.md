@@ -35,6 +35,22 @@ npm run preview
 
 ---
 
+## Deploying to GitHub Pages
+
+FocusFlow includes an automated GitHub Actions deployment workflow at `.github/workflows/deploy.yml`.
+
+1. Go to your GitHub repository (**Settings** → **Pages**).
+2. Under **Build and deployment** → **Source**, choose **GitHub Actions**.
+3. Commit and push:
+   ```bash
+   git add .
+   git commit -m "fix: resolve github pages blank screen and add deploy workflow"
+   git push origin main
+   ```
+4. GitHub Actions will automatically build and deploy FocusFlow to `https://<username>.github.io/<repo-name>/`.
+
+---
+
 ## Keyboard Shortcuts
 - `Ctrl + K`: Open Command Palette (search backlog tasks, quick jump to today, export backup, settings)
 - `Esc`: Close open modal or deselect active time block
